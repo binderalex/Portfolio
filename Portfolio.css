@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     color: #3C2826;
-    background-image: url('Images/AlexWithGradient.png');
+    background-image: url('none');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center;
@@ -32,7 +32,7 @@ content{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 55%;
+  top: 2%;
   /*background-image: url('Images/BackgroundImage.png');*/
   background-position: bottom center;
   background-repeat: no-repeat;

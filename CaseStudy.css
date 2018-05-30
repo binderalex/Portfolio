@@ -35,6 +35,19 @@ body {
   bottom: 120px;
 }
 
+.topcontentblock{
+  width: 90%;
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  margin-bottom: 26px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+}
+
 
 
 content{
@@ -51,10 +64,10 @@ content{
   bottom:0;
 }
 
-@media only screen and (max-width: 330px) {
-    /* For smallphones: */
+@media only screen and (max-width: 414px) {
+    /* For phones: */
     content {
-        top: 25%;
+        top: 2%;
     }
 
 
@@ -63,14 +76,9 @@ content{
 
     body{
       background-image: url('none');
+      background-color: #0b5d94;
     }
 
-}
-
-
-
-@media only screen and (max-width: 420px) {
-    /* For large phones: */
 
     .PhotoFlex{
       text-align: center;
@@ -83,7 +91,29 @@ content{
 
 
 
+
+    .appicon{
+      position: relative;
+      bottom:0px;
+      margin-top: 26px
+
+    }
+
+    .topcontentblock{
+
+      margin-top: 0px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
 
 
 .CaseFlex{
@@ -101,18 +131,7 @@ max-width: 400px;
 }
 
 
-.topcontentblock{
-  width: 90%;
-  max-width: 500px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -100px;
-  margin-bottom: 26px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-
-}
 
 .contentblock{
   width: 90%;
