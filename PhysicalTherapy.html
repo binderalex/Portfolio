@@ -1,0 +1,368 @@
+<html>
+
+<head>
+     <title> Alex Binder - Product Designer - Phys.Assist </title>
+    <link rel="stylesheet" href="CaseStudy.css" >
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,700,700i|Open+Sans:400,700|Space+Mono" rel="stylesheet">
+    <!---scaling code--->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <content class="animate-on-load">
+
+
+      <div class="appicon" style="background-image:url('Images/PhyiscalTherapyIcon.png')"></div>
+
+
+      <div class="topcontentblock">
+        <h1 style="text-align:center;">Physical Therapy Assistant</h1>
+        <h4 style="text-align:center;">iOS app - Interaction, Motion, UX Design</h4>
+        </br>
+        <p>I had the pleasure of working with the <a href="https://spectramedonline.com/"> Spectramed</a> team as their lead product designer during the redesign of their iOS companion app. The app connects to a bluetooth device that assists clinicians in conducting physical therapy on patients suffering from Dysphagia. </p>
+      </div>
+
+      <div class="contentblock">
+
+        <div class="PhotoFlex">
+          <div class="PhotoBlock" style="background-image:url('Images/Throatillustration.png'); width:240px; height:240px;"></div>
+
+          <div class="PhotoBlock">
+            <a href="https://www.youtube.com/watch?v=3hDoLrOrotU">
+              <h2> Dysphagia</h2>
+              <h4> dys·pha·gia </h4>
+            </a>
+
+          <p> A medical condition that makes food and water difficult to swallow. This is typically due to major brain damage.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contentblock">
+      <img style="width:120px; height:inherit;" src="Images/ConnectingTheDots.svg">
+      <h2> Connecting the Dots</h2>
+      <h4> Task Analysis</h4>
+      <p>Typically, clinicians that use Aspire devices are contractual obligated to complete all of the tasks displayed below within a 45 minute session. In order to help us undertand how our product fits into their work flow I facilitated a stakeholder interviews to get a high level understanding of time on task breakdown for a full therapy session. The insights gained from this session helped inform how we approached redesigning the navigation.</p>
+      </br>
+      <h3>Full Therapy Session</h3>
+      <div class='stepper'>
+        <div class='StepActive'></div>
+        <div class='StepInactive'></div>
+      </div>
+      </br>
+      <h4 style="float:left;">15 Minutes</h4> <h4 style="float:left; margin-left:20%;">30 Minutes</h4>
+    </br>
+      <div class="ListFlex">
+        <div class="ListBlock">
+          <div class="StepActive" style="float:left; width:15px; height:15px; margin-right: 10px; "></div> <h4>USING ASPIRE</h4>
+          <ul>
+            <li>
+              <h5>Electric Stimulation Therapy</h5>
+            </li>
+            <li>
+              <h5>Muscle Assessments (once a week)</h5>
+            </li>
+            <li>
+              <h5>Phyiscal Therapy Exercises
+                (Aspire isn’t required)</h5>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ListBlock">
+            <div class="StepInactive" style="float:left; width:15px; height:15px; margin-right: 10px; "></div> <h4>NOT USING ASPIRE</h4>
+
+            <ul>
+              <li>
+                <h5>Record Muscle Assessment Results</h5>
+              </li>
+              <li>
+                <h5>Record Excercise Results</h5>
+              </li>
+              <li>
+                <h5>Patient Education</h5>
+            </li>
+            <li>
+              <h5>Patient Consultation</h5>
+            </li>
+            <li>
+              <h5>Patient Reccomendations</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <img src="Images/OriginalNav.png">
+    </br>
+
+    <div class="caption">
+      <h4> A wireframe of the original navigation before the redesign. All options are available on the home screen. </h4>
+    </div>
+
+    <div class="contentblock">
+      <h2> The Crux of the Problem </h2>
+      <h4> Redesigning App Nav </h4>
+      <p>
+        With the insights gained from our interviews we realized why the previous app was missing the mark.
+      </p>
+    </br>
+      <p>
+        The previous navigation pattern was negatively impacted usability. It used a hub style navigation model that shows the clinician everything at once. This created decision fatigue resulting in clinicians picking options in an order that didn't align with how they work with their patients.
+      </p>
+      <br/>
+      <p>
+        This lead to most clincians starting therapy sessions, entering arbitrary calbration numbers and using the device improperly. Or even worst, abandoning the device all together half way through a session to finish the process manually.
+      </p>
+
+    </div>
+
+    <div class="contentblock">
+      <h2> The Solution </h2>
+
+      <h4> Guiding Clinicians with Progressive Disclosure Techniques </h4>
+      <p> The wireframe below shows the redesigned navigation pattern. The left branch shows the automated calibration process. While the right side shows the manual process for expert clinicians. Read more below. </p>
+    </div>
+
+      <img src="Images/NewNavWireframes.png">
+
+      <div class="contentblock">
+        <p>
+          To reduce ambiguity we emphasize what most clinicians should do when they start a therapy session, calibrate the device to the patients muscle strength. Once the clinician finishes the calibration process we use that data to set up a custom difficulty level for therapy games.
+        </p>
+        <br/>
+        <p>
+          To save time for other activities, some expert clincians log previous calibrations in a journal outside the app and enter calibrations manually when they begin the therapy session. The navigation pattern displayed above still supports this use case as well. These expert clinicians use the calibration tool as a bench mark for how well their patient is doing week over week. This weekly process is technically refered to as a trial. We renamed the calibration context to “Trials” to make the step more meaningful to clinicians.
+        </p>
+    </div>
+
+      <div class="contentblock">
+        <h2>Trials Mode</h2>
+        <h4>Previously Calibration Mode</h4>
+        <p> Trials mode is designed to do two things. It provides some baseline information about the patient’s muscle strength for the clinician. It also calibrates a custom difficulty setting for physical therapy games. </p>
+      </div>
+
+      <img src="Images/TrialsMode.png">
+
+      <div class="caption">
+        <h4> Clinicians can toggle between two different modes depending on their patient's coordination and strength"</h4>
+      </div>
+
+      <div class="contentblock">
+        <h3>Timed vs Self-Paced</h3>
+        <p>
+          There are two different trials modes designed to get the same kind of calibration info. Timed is the default mode. Over a 30 second period of time a patient’s swallowing strength is measured via the Aspire device and displayed on the iOS device.
+        </p>
+      </br>
+        <p>
+          For the majority of patients, "Timed Mode" is meets their needs. However, the problem with "Timed Mode" is that it makes the assumption that all patients with dysphagia can swallow enough times (within 30 seconds) for the device to present relevant results. We introduced another mode called “Self-Paced” designed to let clinician and patient calibrate the device at their own pace.
+        </p>
+      </br>
+
+      </div>
+
+      <img src="https://cdn.dribbble.com/users/382033/screenshots/3826353/trials-mode.gif">
+      <div class="caption">
+        <h4> Animated transitions between the two Trials modes and the "start trials" interaction. Implemented with <a href="https://airbnb.design/introducing-lottie/">Lottie for iOS</a></h4>
+      </div>
+
+      </br>
+      </br>
+      </br>
+      </br>
+      <img src="Images/TrialsFlow.png">
+      <div class="caption">
+        <h4> Left: "Timed Trial" Flow </h4> <h4>Right: "Self-Paced Trial" Flow </h4>
+      </div>
+
+      </br>
+      </br>
+      </br>
+      </br>
+
+      <img src="https://cdn.dribbble.com/users/382033/screenshots/3937445/results-transition.gif">
+      <div class="caption">
+        <h4> Transition from Trials Screen to an early version of the Results Screen. Implemented with <a href="https://airbnb.design/introducing-lottie/">Lottie for iOS</a> and standard iOS modal transition. </h4>
+      </div>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <div class="contentblock">
+        <h2> Poor Error Prevention </h2>
+        <h4> The Setup Process </h4>
+        <p>
+          Based on the stakeholder interviews we conducted earlier and observation during our private beta. One of the largest blocker for clinicians using the companion app was the setup process right before starting a trial or game session.
+        </p>
+        </br>
+        <p>
+          The setup process involved various steps that must be completed in a specific sequence. This process required clinicians to bounce between:
+        </p>
+
+      </br>
+      </br>
+
+        <div class="PhotoFlex">
+          <div class="PhotoBlock" style="background-image:url('Images/FaceWithElectrodes.png'); width:240px; height:240px;"></div>
+
+          <div class="PhotoBlock">
+            <h1 class="pattern">1</h1>
+            <p> Putting multiple electrodes on their patient (in precise locations)</p>
+          </div>
+        </div>
+
+        </br>
+        </br>
+
+        <div class="PhotoFlex">
+          <div class="PhotoBlock" style="background-image:url('Images/SwitchingModes.png'); width:240px; height:240px;"></div>
+
+          <div class="PhotoBlock">
+            <h1 class="pattern">2</h1>
+            <p> Navigating to the right mode on the Aspire Device by pressing the M button.</p>
+          </div>
+        </div>
+
+
+        </br>
+        </br>
+
+        <div class="PhotoFlex">
+          <div class="PhotoBlock" style="background-image:url('Images/HitPlayButton.png'); width:240px; height:240px;"></div>
+
+          <div class="PhotoBlock">
+            <h1 class="pattern">3</h1>
+            <p> Then hitting the play button on said Aspire Device</p>
+          </div>
+        </div>
+
+      </br>
+      </br>
+
+      <div class="PhotoFlex" style="margin-bottom:100px;">
+        <div class="PhotoBlock" style="background-image:url('Images/TrialsScreen.png'); width:240px; height:240px;"></div>
+
+        <div class="PhotoBlock">
+          <h1 class="pattern">4</h1>
+          <p> Then going back to their phone or tablet and starting up the trial or game</p>
+        </div>
+      </div>
+
+    <h3> Solution </h3>
+    <h4> The Setup Checklist </h4>
+    <p>
+      We found that the best way to handle these errors were to run a check right when the user hits the start button to make sure all of the proper conditions were met. If one of these conditions were not met we would launch a wizard that takes the clinician through the setup process step by step.
+    </p>
+  </div>
+
+  <img src="Images/ErrorWizardFlowChart.png">
+  <div class="caption">
+      <h4> This interaction pattern occurs when the Aspire device is in the wrong mode.</h4>
+  </div>
+
+</br>
+</br>
+</br>
+</br>
+
+  <div class="contentblock">
+    <h2> Error State System </h2>
+    <h4> Illustration System </h4>
+      <p>
+        There were multiple places where this style of error occurs through out the app. So this provided an opportunity to come up with a cohesive illustration system to help guide clinicians through the set up process.
+      </p>
+    </br>
+      <p>
+        The goal was to use on-brand accent colors to highlight the parts of the device clinicians should focus on.
+      </p>
+
+    </br>
+    </br>
+
+      <div class="PhotoFlex">
+        <div class="PhotoBlock" style="background-image:url('Images/FaceWithElectrodes.png'); width:240px; height:240px;"></div>
+        <div class="PhotoBlock" style="background-image:url('Images/LooseLeadWire.png'); width:240px; height:240px;"></div>
+      </div>
+
+      <div class="PhotoFlex">
+        <div class="PhotoBlock" style="background-image:url('Images/LoosePlug.png'); width:240px; height:240px;"></div>
+        <div class="PhotoBlock" style="background-image:url('Images/SwitchingModes.png'); width:240px; height:240px;"></div>
+      </div>
+
+      <div class="PhotoFlex">
+        <div class="PhotoBlock" style="background-image:url('Images/HitPlayButton.png'); width:240px; height:240px;"></div>
+        <div class="PhotoBlock" style="background-image:url('Images/Success.png'); width:240px; height:240px;"></div>
+      </div>
+
+      <div class="PhotoFlex">
+        <div class="PhotoBlock" style="background-image:url('Images/LooseElectrodeAlertKickoff.png'); width:240px; height:240px;"></div>
+        <div class="PhotoBlock" style="background-image:url('Images/ModeAlertKickoff.png'); width:240px; height:240px;"></div>
+      </div>
+
+  </div>
+
+  <div class="contentblock">
+    <h2> Physical Therapy Games</h2>
+    <p>
+      Once the app is calibrated the home screen presents the option to play games that can be controlled with the Aspire device. Currently there is only one game available but Spectramed has plans to add additional games in the future.
+    </p>
+  </div>
+
+  <img src="Images/HomeScreen.png">
+  <div class="caption">
+    <h4> Left: Default Home Screen.</h4>
+    <h4> Right: Home Screen after calibrating the app.</h4>
+  </div>
+
+</br>
+</br>
+</br>
+</br>
+
+  <div>
+    <div class="video-responsive">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZqLjMewDSeQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="caption">
+    <h4> Playing the Therapy Game</h4>
+  </div>
+</br>
+</br>
+</br>
+</br>
+  <div class="contentblock">
+    <h2> Turning Clients into Game Designers </h2>
+    <h4> Keeping Clients Focused </h4>
+    <p>
+      When we first started working with the Spectramed team they were very enthusiastic about the opportunity to design games for their customers. They had a lot of great ideas. But to keep them focused I facilitated a workshop with their clinicians on staff and we talked about the goals clinicians have for their therapy patients. We were able to organize those goals into three buckets. This framework helped drive our decision for what games made the backlog verses the games that didn’t make the cut. So for example the paper plane game hit two out of three therapy goals so we launched with it.
+    </p>
+  </br>
+  </br>
+    <p>
+      Come back here for more updates if you liked what you saw. I will update this page with more of the games as we release.
+    </p>
+
+  </div>
+
+      <!--
+          <div class="contentblock">
+            <h2> High Fidelity UI </h2>
+            <h4> The Polish </h4>
+          </div>
+
+            <img src="https://cdn.dribbble.com/users/382033/screenshots/3765239/bluetoothonboarding.gif">
+
+            <div class="caption">
+              <h4> Implemented with <a href="https://airbnb.design/introducing-lottie/">Lottie for iOS</a></h4>
+            </div>
+
+            <div class="contentblock">
+              <p> When clinicians launch the app on their phone or tablet we attempt to pair with their Aspire device automatically.
+                If they have bluetooth disabled the app guides them to enable bluetooth. </p>
+            </div>
+      -->
+  </content>
+</body>
+</html>

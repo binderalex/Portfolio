@@ -1,0 +1,324 @@
+html, body{
+
+  margin:0;
+
+  padding:0;
+
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    color: #005C96;
+    background-image: url('Images/PhysicalTherapyBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    background-color: #FFFFFF;
+
+}
+
+
+
+.appicon{
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 115px;
+  height: 115px;
+  position: relative;
+  bottom: 120px;
+}
+
+
+
+content{
+  height: content;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70%;
+  /*background-image: url('Images/BackgroundImage.png');*/
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  bottom:0;
+}
+
+@media only screen and (max-width: 330px) {
+    /* For smallphones: */
+    content {
+        top: 25%;
+    }
+
+
+
+
+
+    body{
+      background-image: url('none');
+    }
+
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    /* For large phones: */
+
+    .PhotoFlex{
+      text-align: center;
+    }
+
+    ul{
+      text-align: left;
+    }
+
+
+
+
+}
+
+
+.CaseFlex{
+
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.HeaderMax{
+
+max-width: 400px;
+
+}
+
+
+.topcontentblock{
+  width: 90%;
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  margin-bottom: 26px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+}
+
+.contentblock{
+  width: 90%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+}
+
+.animate-on-load {
+  animation: 0.75s fade-up-enter;
+}
+
+@keyframes fade-up-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+.pattern{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23337dab' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: left;
+}
+
+.caption{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 700px;
+  text-align:center;
+
+}
+
+
+h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+/*font-style: italic;*/
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 90%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+
+h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+/*font-style: italic;*/
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 90%;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+}
+
+h3{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 110%;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  opacity: .75;
+
+}
+
+
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 175%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #5a5a5a;
+}
+
+
+
+h4{
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+  font-size: .77em;
+  color: #337dab;
+  line-height: 130%;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+h5{
+  font-family: '  Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .77em;
+  color: #5a5a5a;
+  line-height: 130%;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+a{
+  color: #005C96;
+  -webkit-text-decoration-color: #F1D7A2; /* Safari */
+   text-decoration-color: #F1D7A2;
+   font-weight: 700;
+}
+
+ul{
+  text-align: left;
+
+}
+
+.ListFlex{
+
+display: flex;
+flex-wrap: wrap;
+float: left;
+margin: 0 auto 0 auto;
+
+}
+
+.ListBlock{
+  margin-top: 8px;
+  width: 230px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+.PhotoFlex{
+
+display: flex;
+flex-wrap: wrap;
+float: left;
+margin: 0 auto 20px auto;
+
+
+}
+
+.PhotoBlock{
+  margin-top: 8px;
+  width: 230px;
+  margin: 0 auto 0 auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+  img{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+  }
+
+  .video-responsive{
+      overflow: hidden;
+      padding-bottom: 400px;
+      position: relative;
+      height: 0;
+      max-width: 700px;
+      max-height: 400px;
+      margin: 0 auto 0 auto;
+  }
+  .video-responsive iframe{
+      left:0;
+      top:0;
+      max-width: 700px;
+      max-height: 400px;
+      height:100%;
+      width:100%;
+      position:absolute;
+  }
+
+
+  .StepActive{
+  background-color: #0072CF;
+  height: 10px;
+  }
+
+  .StepInactive{
+  background-color: #CCCCCC;
+  opacity: .5;
+  height: 10px;
+  }
+
+
+
+  .stepper{
+  height: 3px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 35% auto ;
+  grid-gap: 3px;
+
+  }

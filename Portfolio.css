@@ -1,109 +1,221 @@
+html, body{
+
+  margin:0;
+
+  padding:0;
+
+
+}
+
 body {
-    background-color: #001C2E;
+
     display: flex;
     justify-content: center;
-    overflow: hidden;
-}
-#blockParent {
-    margin: auto;
-}
-a {
-    font-family: 'Copse', serif;
-    color: #FEF4E8;
-    transition: opacity 0.25s;
-}
-a:hover {
-    opacity: .5;
-}
-#centerBlock {
-    display: flex;
-    flex-direction: row;
-    width: 66%;
-    /*background-color: pink;*/
-
-    min-width: 350px;
-    max-width: 700px;
-}
-#textBlock {
-    z-index: 2;
-    padding-left: 16px;
-    padding-right:8px;
-    display: flex;
-    flex-direction: column;
-}
-h1 {
-    font-family: 'Copse', serif;
-    font-size: 52px;
-    color: #FEF4E8;
-}
-p {
-    font-family: 'Open Sans', sans-serif;
-    color: #CCEAEF;
-    font-size: 14px;
-}
-#outline {
-    margin-top: 12px;
-    min-width: 158px;
-    min-height: 158px;
-    height: 158px;
-    width: 158px;
-    border-radius: 158px;
-    border: 2px;
-    border-style: solid;
-    border-color: rgba(254, 244, 232, 1);
-    display: flex;
-    justify-content: center;
-    transition: border-color 0.5s ease;
-    transition: padding 0.5s ease;
-    padding: 0px;
+    color: #3C2826;
+    background-image: url('Images/AlexWithGradient.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    background-color: #3c2826;
 
 }
-/*#outline:hover {
-    border-color: rgba(254, 244, 232, 1);
-    padding: 16px;
-}*/
-#AvatarBlock {
-    display: flex;
-    flex-flow: column;
-}
-#socialMediaContainer {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 12px;
 
-}
-.socialMediaIcons {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 12px;
-    color: #FEF4E8;
-    display: flex;
-}
-#imageStuff {
-    margin: 4px;
-    overflow: hidden;
-    min-width: 150px;
-    min-height: 150px;
-    border-radius: 150px;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-}
 
-#textbutton{
+
+
+
+content{
+
+  width: 100%;
+  background-color: #FFFFFF;
   display: flex;
-  padding: 8px;
-  background-color: #FEF4E8;
-  color: #001C2E;
-  font-family: 'Copse', serif;
-  transition: opacity 0.5s ease;
-  border-radius: 30px;
-  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 55%;
+  /*background-image: url('Images/BackgroundImage.png');*/
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  bottom:0;
 }
 
-#textbutton:hover{
+@media only screen and (max-width: 330px) {
+    /* For smallphones: */
+    content {
+        top: 0%;
+    }
 
-opacity: .5;
+    .CaseStudyBlock{
+      width: 279px;
+    }
 
+
+    body{
+      background-image: url('none');
+    }
+
+}
+
+
+@media only screen and (min-width: 500px) {
+    /* For largescreens: */
+    content {
+        position: relative;
+        top: 2%;
+    }
+
+
+
+
+
+    body{
+      background-image: url('none');
+    }
+
+}
+
+.CaseFlex{
+
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.HeaderMax{
+
+max-width: 400px;
+
+}
+
+
+.contentblock{
+  width: 90%;
+
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 24px;
+  margin-bottom: 26px;
+
+
+}
+
+.animate-on-load {
+  animation: 0.75s fade-up-enter;
+}
+
+@keyframes fade-up-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+
+
+
+
+
+h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+/*font-style: italic;*/
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 90%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+
+h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+/*font-style: italic;*/
+  font-weight: 700;
+  font-size: 1.65em;
+  line-height: 90%;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+}
+
+h3{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 110%;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+}
+
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 175%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #6d5e5d;
+}
+
+.CaseStudyBlock{
+  width: 300px;
+  /*max-width: 373px;*/
+  margin-top: 8px;
+  margin-bottom: 20px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 95%;
+
+
+
+}
+
+
+
+
+.CaseStudyTextBlock{
+  font-family: 'IBM Plex Sans', sans-serif;
+/*font-style: italic;*/
+  line-height: 90%;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  top: 40%;
+  max-width: 215px;
+  background-color: #fdfcf8;
+
+
+}
+
+.SocialMediaIcon{
+
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+  margin-left: 0px;
+}
+
+h4{
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+  font-size: .77em;
+  color: #988571;
+  line-height: 130%;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+a{
+  color: #3c2826;
+  -webkit-text-decoration-color: #F1D7A2; /* Safari */
+   text-decoration-color: #F1D7A2;
+   font-weight: 700;
 }
