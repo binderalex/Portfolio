@@ -16,7 +16,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: contain;
     background-color: #FFFFFF;
     height: 100%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ content{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 70%;
+  top: 50%;
   /*background-image: url('Images/BackgroundImage.png');*/
   background-position: bottom center;
   background-repeat: no-repeat;
