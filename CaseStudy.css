@@ -54,7 +54,7 @@ body {
 
 
 content{
-  height: content;
+  height: max-content;
   width: 100%;
   background-color: #FFFFFF;
   display: flex;
