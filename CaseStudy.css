@@ -16,7 +16,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: 1920px 960px;
+    -webkit-background-size: cover;
     background-color: #FFFFFF;
     height: 100%;
     background-repeat: no-repeat;
