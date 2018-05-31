@@ -13,7 +13,6 @@ body {
     justify-content: center;
     color: #005C96;
     background-image: url('Images/PhysicalTherapyBackground.png');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center;
     background-size: cover;
@@ -21,6 +20,7 @@ body {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-color: #FFFFFF;
+    background-repeat: no-repeat;
 
 }
 
