@@ -63,7 +63,7 @@ content{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 50%;
+  top: 60%;
   /*background-image: url('Images/BackgroundImage.png');*/
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -115,16 +115,6 @@ content{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .CaseFlex{
