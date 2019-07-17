@@ -69,17 +69,13 @@ content{
 
 
 
-
-
+}
 @media only screen and (max-width: 414px) {
     /* For phones: */
     content {
         top: 2%;
-    }
 
-
-
-
+}
 
     body{
       background-image: url('none');
@@ -92,7 +88,7 @@ content{
     }
 
     ul{
-      text-align: left;
+      text-align: center;
     }
 
 
@@ -110,6 +106,19 @@ content{
 
       margin-top: 0px;
     }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* Medium width screens: */
+
+    img{
+
+      width: 100%;
+    }
+
+
 
 }
 
@@ -291,10 +300,10 @@ margin: 0 auto 20px auto;
   }
 
   img{
-    width: 100%;
     max-width: 700px;
     margin: 0 auto 0 auto;
-  }
+
+    }
 
   .video-responsive{
       overflow: hidden;
