@@ -69,18 +69,18 @@ content{
 
 
 
-}
 @media only screen and (max-width: 414px) {
     /* For phones: */
     content {
-        top: 2%;
+        top: 30%;
 
 }
 
+    /*
     body{
-      background-image: url('none');
-      background-color: #0b5d94;
+      background: none;
     }
+    */
 
 
     .PhotoFlex{
@@ -96,10 +96,10 @@ content{
 
 
     .appicon{
-      position: relative;
-      bottom:0px;
-      margin-top: 26px
-
+      background: none;
+      width: 0;
+      height: 0;
+      margin: 10px;
     }
 
     .topcontentblock{
@@ -118,7 +118,10 @@ content{
       width: 100%;
     }
 
+    content {
+        top: 30%;
 
+}
 
 }
 
@@ -165,6 +168,20 @@ max-width: 400px;
     opacity: 1;
     transform: translateY(0)
   }
+}
+
+
+@media only screen and (max-width: 375px) {
+    /* For ultra narrow browsers: */
+    content {
+        top: 2%;
+
+      }
+
+    body{
+      background: none !important;
+      }
+
 }
 
 
