@@ -67,9 +67,23 @@ content{
   bottom:0;
 }
 
+@media only screen and (max-width: 1000px) {
+    /* Medium width screens: */
+
+    img{
+
+      width: 100%;
+    }
+
+    content {
+        top: 45%;
+
+}
+
+}
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 440px) {
     /* For phones: */
     content {
         top: 30%;
@@ -125,7 +139,6 @@ content{
 }
 
 }
-
 
 .CaseFlex{
 
