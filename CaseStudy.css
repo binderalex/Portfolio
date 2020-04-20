@@ -148,8 +148,8 @@ max-width: 400px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 75px;
-  margin-top: 75px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   padding-top: 1px;
   padding-bottom: 1px;
 
@@ -301,7 +301,7 @@ margin: 0 auto 0 auto;
 
 display: flex;
 flex-wrap: wrap;
-float: left;
+/*float: left;*/
 margin: 0 auto 20px auto;
 
 
