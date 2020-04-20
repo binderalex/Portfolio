@@ -85,6 +85,7 @@ content{
 
     .PhotoFlex{
       text-align: center;
+      float: none;
     }
 
     ul{
@@ -301,7 +302,7 @@ margin: 0 auto 0 auto;
 
 display: flex;
 flex-wrap: wrap;
-/*float: left;*/
+float: none;
 margin: 0 auto 20px auto;
 
 
