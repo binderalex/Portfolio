@@ -37,6 +37,7 @@ content{
   background-position: bottom center;
   background-repeat: no-repeat;
   bottom:0;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 330px) {
@@ -174,12 +175,27 @@ p{
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 95%;
-
-
-
+  transition: 0.3s;
 }
 
+.CaseStudyBlockNotActive{
+  width: 100%;
+  max-width: 700px;
+  min-width: 500px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 95%;
+  transition: 0.3s;
+}
 
+.CaseStudyBlock:hover{
+opacity: 90%;
+width: 90%;
+transition: 0.3s;
+}
 
 
 .CaseStudyTextBlock{
