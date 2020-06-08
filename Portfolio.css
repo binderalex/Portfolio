@@ -46,7 +46,7 @@ content{
     }
 
     .CaseStudyBlock{
-      width: 279px;
+      width: 100%;
     }
 
 
@@ -76,8 +76,8 @@ content{
 
 .CaseFlex{
 
-display: flex;
-flex-wrap: wrap;
+/*display: flex;
+flex-wrap: wrap;*/
 
 
 }
@@ -165,11 +165,12 @@ p{
 }
 
 .CaseStudyBlock{
-  width: 300px;
-  /*max-width: 373px;*/
+  width: 100%;
+  max-width: 700px;
+  min-width: 500px;
   margin-top: 8px;
   margin-bottom: 20px;
-  height: 300px;
+  height: 350px;
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 95%;
