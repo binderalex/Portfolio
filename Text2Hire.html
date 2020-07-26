@@ -125,7 +125,7 @@
     </div>
     <div class="contentblock">
       <p>
-        The original order of this list, newest ➡️ oldest candidates, made it extremely difficult for recruiters to keep track of candidates who either needed to reschedule their interview or leave any feedback on candidates they've recently interviewed. The team originally thought that recruiters would use the "Interviews" tab to manage candidates this way. But seeing recruiters gravitate towards the "candidates" view even though it was difficult to use told us that our perception of their mental model was incorrect. So we thought it was important to make sure exposed features that let recruiters manage their candidates easily straight from this list. Because if recruiter couldn’t keep track of who they reached out too, then this fancy chatbot that increased applicant volume would be worthless.
+        The original order of this list, newest ➡️ oldest candidates, made it extremely difficult for recruiters to keep track of candidates who either needed to reschedule their interview or leave any feedback on candidates they've recently interviewed. The team originally thought that recruiters would use the "Interviews" tab to manage candidates this way. But seeing recruiters gravitate towards the "candidates" view even though it was difficult to use told us that our perception of their mental model was incorrect. So we thought it was important to make sure we exposed features that let recruiters manage their candidates easily straight from this list. Because if recruiter couldn’t keep track of who they reached out too, then this fancy chatbot that increased applicant volume would be worthless.
       </p>
     </div>
 
@@ -134,19 +134,28 @@
       <h2> The Solution </h2>
 
       <h4> Highlighting mission critical candidates </h4>
-      <p> The wireframe below shows the redesigned navigation pattern. The left branch shows the automated calibration process. While the right side shows the manual process for expert clinicians. Read more below. </p>
+      <p> The solution we landed on was a filtering system modeled after our recruiters' interview process. We organized candidates being actively considered for a position into chronological buckets based on where they were in the recruitment process. Read more below. </p>
     </div>
 
       <img src="Images/CandidateListRedesign.png">
+      <div class="caption">
+        <h4> We used the real estate at the top ofthe screen highlighting two different kinds of candidates. Candidates who needed to reschedule and candidates that an HR person has just finished interviewing.</h4>
+      </div>
+</br>
+</br>
+      <img src="Images/CandidateListRedesignNoNotifcations.png">
+      <div class="caption">
+        <h4> Here is the default state of the candidate list. We only reserved higher contrast colors for when we actually needed to catch a recruiters attention.</h4>
+      </div>
+</br>
+</br>
+      <img src="Images/CandidateFilterList.gif">
 
       <div class="contentblock">
         <p>
-          To reduce ambiguity we emphasize what most clinicians should do when they start a therapy session, calibrate the device to the patients muscle strength. Once the clinician finishes the calibration process we use that data to set up a custom difficulty level for therapy games.
+        Before releasing this feature recruiters would miss, on average, 5 to 6 candidates every day because they had issues scheduling an interview with the chatbot. Highlighting candidates this way reduced missed candidates to nearly 0 with our beta group. We planned to follow up this feature SMS notification post beta.
         </p>
-        <br/>
-        <p>
-          To save time for other activities, some expert clincians log previous calibrations in a journal outside the app and enter calibrations manually when they begin the therapy session. The navigation pattern displayed above still supports this use case as well. These expert clinicians use the calibration tool as a bench mark for how well their patient is doing week to week. This weekly process is technically refered to as a trial. We renamed the calibration context to “Trials” to make the step more meaningful to clinicians.
-        </p>
+
     </div>
 
       <div class="contentblock">
@@ -156,6 +165,7 @@
       </div>
 
       <img src="Images/TrialsMode.png">
+
 
       <div class="caption">
         <h4> Clinicians can toggle between two different modes depending on their patient's coordination and strength"</h4>
