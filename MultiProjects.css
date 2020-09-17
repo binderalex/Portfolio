@@ -34,7 +34,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: -100px;
+  margin-top: 25px;
   margin-bottom: 26px;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -50,7 +50,7 @@ content{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 50%;
+
   /*background-image: url('Images/BackgroundImage.png');*/
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -65,20 +65,13 @@ content{
       width: 100%;
     }
 
-    content {
-        top: 45%;
-
-}
 
 }
 
 
 @media only screen and (max-width: 440px) {
     /* For phones: */
-    content {
-        top: 30%;
 
-}
 .TimeGapLabel{
   opacity: 0;
 }
@@ -102,7 +95,7 @@ content{
 
 
 
-  
+
 
     .topcontentblock{
 
@@ -121,7 +114,7 @@ content{
     }
 
     content {
-        top: 30%;
+        top: 0%;
 
 }
 
@@ -326,6 +319,11 @@ margin: 0 auto 20px auto;
     margin: 0 auto 0 auto;
 
     }
+  video{
+      max-width: 700px;
+      margin: 0 auto 0 auto;
+
+      }
 
   .video-responsive{
       overflow: hidden;
