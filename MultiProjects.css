@@ -305,6 +305,17 @@ margin: 0 auto 20px auto;
 
 }
 
+.MultiPhotoFlex{
+
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+float: none;
+margin: 0 auto 20px auto;
+
+
+}
+
 .PhotoBlock{
   margin-top: 8px;
   width: 230px;
@@ -312,6 +323,7 @@ margin: 0 auto 20px auto;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  text-align: center;
   }
 
   img{
